@@ -3,13 +3,19 @@ $(document).ready(function(){   //esta funcion se ejecuta cuando se inicia el do
 
 $(".LogIn").click(function(){//esta funcion se ejecuta cuando se precione el boton para loguearte
 
+u=$(".text").val();
+p=$(".password").val();
+var datos='dat={"usuario": "'+u+'", "password":"'+p+'"}';
+
     $.ajax({
-        data: {"usuario": ".text", "password": ".password"},
-        type: 'POST',
+        data: datos,
+        type: 'GET',
         dataType: "json",
-        url: 'http://localhost/RegistroBoby/PHP/Inicio.php',
-        success: function() {
-        alert("Has iniciado sesion");    
+        url: '../PHP/Inicio.php',
+        success: function(res) {
+            $.each(res,function(i,v){
+                alert('Bienvenido '+v.nombre + ' ' +v.apellido);    
+            });
         },
         error: function() {
             alert("Contraseña o Usuario incorrectas, por favor reintentarlo");
