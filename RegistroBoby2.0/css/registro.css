@@ -1,0 +1,108 @@
+html {
+	font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+	background-color: #9AD1ED;
+}
+
+.container {
+	max-width: 800px;
+	height: auto;
+	background-color: #fff;
+	margin: 5% auto;
+	padding-bottom: 1rem;
+	margin-top: 20px;
+
+}
+
+.form__top {
+	width: 100%;
+	text-align: center;
+	padding: 2rem 0 1rem;
+	border-top: solid .4rem #a6af13;
+	margin-bottom: 1rem;
+}
+
+.form__top h2 {
+	font-weight: bold;
+	color: #CAC8C8;
+	font-size: 18px;
+}
+
+h2 span {
+	color: #a6af13;
+}
+
+.form__reg {
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.btn__form {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+
+.input, .btn__submit, .btn__reset{
+	background-color: #EFEFEF;
+	padding: .5rem;
+	margin: .5rem 0;
+	border: none;
+	border-bottom: solid #C8C8C8 .2rem;
+	transition: all .5s;
+}
+
+.input:focus {
+	border-bottom: solid #a6af13 .2rem;
+}
+
+.btn__submit, .btn__reset {
+	width: 40%;
+	border-bottom: none;
+	background-color: #fff;
+	color: white;
+}
+
+.btn__reset {
+	background-color: #EDA135;
+}
+
+.btn__submit:hover {
+	background-color: #a6af13;
+}
+
+.btn__reset:hover{
+	background-color: #FA9535;
+}
+#header {
+height: 80px;
+z-index: 20;
+margin-top: -8px;
+width: 100%;
+margin-left: -5px;
+}
+.pin-x{
+	right: :0;
+	left:0;
+}
+.container2{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+.flex{
+	display: flex;
+}
+.logo{
+	margin-top: -42px;
+	height: 165px;
+	width: 245px;
+	margin-left: 30px;
+}

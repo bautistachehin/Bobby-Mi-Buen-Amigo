@@ -1,0 +1,7 @@
+body{
+    background: url(../imagenes/fondo-perritos.jpg) no-repeat fixed center center #333333;
+    background-size: cover;
+}
+.b-h{
+  background-image: url(../imagenes/header.png);
+}
